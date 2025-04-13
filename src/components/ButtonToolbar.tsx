@@ -54,7 +54,7 @@ const ButtonToolbar: React.FC<ButtonToolbarProps> = ({
 			bottom: 20,
 			left: '50%',
 			transform: 'translateX(-50%)',
-			backgroundColor: 'rgba(255, 255, 255, 0.85)',
+			backgroundColor: 'rgba(237, 180, 246, 0.93)',
 			borderRadius: 50,
 			padding: '0.5rem 1.5rem',
 			display: 'flex',
