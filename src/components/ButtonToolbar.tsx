@@ -47,65 +47,65 @@ const ButtonToolbar: React.FC<ButtonToolbarProps> = ({
 	};
 
 	return (
-	<Box
-		className='no-print'
-		sx={{
-			position: 'fixed',
-			bottom: 20,
-			left: '50%',
-			transform: 'translateX(-50%)',
-			backgroundColor: 'rgba(237, 180, 246, 0.93)',
-			borderRadius: 50,
-			padding: '0.5rem 1.5rem',
-			display: 'flex',
-			gap: 2,
-			zIndex: 10,
-			boxShadow: 3,
-		}}>
-		<Tooltip title='Export to PDF'>
-			<IconButton
-				onClick={handleExportPDF}
-				sx={{
-					backgroundColor: '#f5f5f5',
-					borderRadius: '50%',
-					width: 56,
-					height: 56,
-					'&:hover': { backgroundColor: '#e0e0e0' },
-				}}>
-				<PictureAsPdfIcon fontSize='medium' />
-			</IconButton>
-		</Tooltip>
-        		<Tooltip title='Print Recipe'>
-			<IconButton
-				onClick={() => window.print()}
-				sx={{
-					backgroundColor: '#f5f5f5',
-					borderRadius: '50%',
-					width: 56,
-					height: 56,
-					'&:hover': { backgroundColor: '#e0e0e0' },
-				}}>
-				<PrintIcon fontSize='medium' />
-			</IconButton>
-		</Tooltip>
-        		<Tooltip title='Get Another Recipe'>
-			<IconButton
-				onClick={() => {
-					setUrl('');
-					setData(null);
-					window.scrollTo({ top: 0, behavior: 'smooth' });
-				}}
-				sx={{
-					backgroundColor: '#f5f5f5',
-					borderRadius: '50%',
-					width: 56,
-					height: 56,
-					'&:hover': { backgroundColor: '#e0e0e0' },
-				}}>
-				<AutorenewIcon fontSize='medium' />
-			</IconButton>
-		</Tooltip>
-	</Box>
+		<Box
+			className='no-print'
+			sx={{
+				position: 'fixed',
+				bottom: 20,
+				left: '50%',
+				transform: 'translateX(-50%)',
+				backgroundColor: 'rgba(255, 255, 255, 0.85)',
+				borderRadius: 50,
+				padding: '0.5rem 1.5rem',
+				display: 'flex',
+				gap: 2,
+				zIndex: 10,
+				boxShadow: 3,
+			}}>
+			<Tooltip title='Export to PDF'>
+				<IconButton
+					onClick={handleExportPDF}
+					sx={{
+						backgroundColor: '#f5f5f5',
+						borderRadius: '50%',
+						width: 56,
+						height: 56,
+						'&:hover': { backgroundColor: '#e0e0e0' },
+					}}>
+					<PictureAsPdfIcon fontSize='medium' />
+				</IconButton>
+			</Tooltip>
+			<Tooltip title='Print Recipe'>
+				<IconButton
+					onClick={() => window.print()}
+					sx={{
+						backgroundColor: '#f5f5f5',
+						borderRadius: '50%',
+						width: 56,
+						height: 56,
+						'&:hover': { backgroundColor: '#e0e0e0' },
+					}}>
+					<PrintIcon fontSize='medium' />
+				</IconButton>
+			</Tooltip>
+			<Tooltip title='Get Another Recipe'>
+				<IconButton
+					onClick={() => {
+						setUrl('');
+						setData(null);
+						window.scrollTo({ top: 0, behavior: 'smooth' });
+					}}
+					sx={{
+						backgroundColor: '#f5f5f5',
+						borderRadius: '50%',
+						width: 56,
+						height: 56,
+						'&:hover': { backgroundColor: '#e0e0e0' },
+					}}>
+					<AutorenewIcon fontSize='medium' />
+				</IconButton>
+			</Tooltip>
+		</Box>
 	);
 };
 
