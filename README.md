@@ -1,6 +1,6 @@
 # Replete
 
-**Your recipe collection, full and flavourful.**
+**Recipe Collector**
 
 Replete is a minimalist web app that lets you paste a recipe URL from sites like **BBC Good Food** or **Jamie Oliver**, automatically scrapes the title, ingredients, and method, and formats the recipe beautifully for printing, saving as a PDF, or adding to your personal cookbook.
 
