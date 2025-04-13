@@ -22,7 +22,7 @@ interface RecipeFormProps {
 const RecipeForm: React.FC<RecipeFormProps> = ({ url, setUrl, setData }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const [isPending, startTransition] = useTransition();
-	  const { pending } = useFormStatus();
+	const { pending } = useFormStatus();
 	useEffect(() => {
 		inputRef.current?.focus();
 	}, []);
@@ -54,7 +54,7 @@ const RecipeForm: React.FC<RecipeFormProps> = ({ url, setUrl, setData }) => {
 				<TextField
 					inputRef={inputRef}
 					type='text'
-					label='Paste BBC Good Food URL'
+					label='Paste Recipe URL'
 					variant='outlined'
 					value={url}
 					name='url'
