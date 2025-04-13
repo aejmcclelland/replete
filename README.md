@@ -15,6 +15,7 @@ Replete is a minimalist web app that lets you paste a recipe URL from sites like
   Recipes are cleanly styled for physical copies, with a single click.
 
 -  **PDF Export**  
+
   Export your recipe to PDF with one tap for offline access.
 
 - **One-Click Reset**  
